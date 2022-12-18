@@ -34,8 +34,7 @@ class Products extends StatelessWidget {
                         width: 280,
                         height: 200,
                         child: Image.network(image[0])),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    Column(
                       children: [
                         Text(
                           title,
@@ -45,7 +44,7 @@ class Products extends StatelessWidget {
                           'R\$ ${price.toString()},00',
                           style: const TextStyle(
                               fontSize: 23, color: Colors.green),
-                        )
+                        ),
                       ],
                     ),
                   ],

@@ -33,7 +33,11 @@ class Categorys extends StatelessWidget {
                   margin: const EdgeInsets.all(1),
                   child: GridTile(
                       child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/eachcategory', arguments: {
+                        'category': value[index].name
+                      });
+                    },
                     child: Column(
                       children: [
                         Image.network(value[index].image),

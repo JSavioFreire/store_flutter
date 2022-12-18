@@ -1,3 +1,4 @@
+import 'package:store/pages/each_category.dart';
 import 'package:store/pages/each_product.dart';
 import 'package:store/theme/theme.dart';
 import './pages/home_page.dart';
@@ -19,7 +20,8 @@ class App extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/eachproduct': (context) => const EachProduct()
+        '/eachproduct': (context) => const EachProduct(),
+        '/eachcategory' :(context) => const EachCategory()
       },
     );
   }

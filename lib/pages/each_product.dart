@@ -20,8 +20,22 @@ class EachProduct extends StatelessWidget {
                     arg['title'],
                     style: const TextStyle(fontSize: 20),
                   ),
-                  CarouselEachProduct(arg['image'])
-
+                  CarouselEachProduct(arg['image']),
+                  Container(
+                      margin: const EdgeInsets.all(20),
+                      child: Text(arg['description'])),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      ElevatedButton(
+                          onPressed: () {}, child: const Text('Add to cart')),
+                      Text(
+                        'R\$ ${arg['price'].toString()},00',
+                        style:
+                            const TextStyle(color: Colors.green, fontSize: 30),
+                      ),
+                    ],
+                  )
                 ])));
   }
 }

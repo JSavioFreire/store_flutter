@@ -8,7 +8,6 @@ class CardStore extends StatelessWidget {
     return PopupMenuButton(
       icon: const Icon(
         Icons.local_grocery_store_outlined,
-        color: Colors.black54,
       ),
       iconSize: 30,
       itemBuilder: (ctx) => [

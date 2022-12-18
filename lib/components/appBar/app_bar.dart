@@ -11,6 +11,9 @@ class AppBarDesign extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: AppBar(
+        iconTheme: const IconThemeData(
+          color: Colors.black54, //change your color here
+        ),
         elevation: 0,
         title: const Text(
           'Lojinha',
